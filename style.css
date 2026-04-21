@@ -1,0 +1,336 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===== HEADER ===== */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 3px solid #cc0000;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: clamp(3rem, 8vw, 5rem);
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+.logo-accent {
+    color: #cc0000;
+    text-shadow: 0 0 20px rgba(204, 0, 0, 0.7);
+}
+
+.tagline {
+    color: #999;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* ===== ANIME GRID (Index) ===== */
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.anime-card {
+    background: #111;
+    border: 2px solid #cc0000;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.anime-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(204, 0, 0, 0.5);
+}
+
+.anime-poster {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+.anime-card-title {
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    background: #0a0a0a;
+    color: #fff;
+}
+
+/* ===== BOTONES ===== */
+.back-btn {
+    display: inline-block;
+    background: #cc0000;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+    border: 1px solid #ff3333;
+}
+
+.back-btn:hover {
+    background: #ff0000;
+    box-shadow: 0 0 20px rgba(204, 0, 0, 0.7);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* ===== ANIME HEADER ===== */
+.anime-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.anime-title-large {
+    font-family: 'Bebas Neue', cursive;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: #cc0000;
+    text-shadow: 0 0 15px rgba(204, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.anime-meta {
+    color: #aaa;
+    font-size: 1rem;
+}
+
+/* ===== SECCIONES ===== */
+.section-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: #cc0000;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #cc0000;
+    padding-bottom: 10px;
+}
+
+/* ===== TEMPORADAS GRID ===== */
+.seasons-container {
+    padding: 20px 0;
+}
+
+.seasons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.season-card {
+    background: #0a0a0a;
+    border: 3px solid #cc0000;
+    border-radius: 16px;
+    padding: 40px 60px;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 200px;
+    text-align: center;
+}
+
+.season-card:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(204, 0, 0, 0.8);
+}
+
+.season-card:hover .season-number {
+    color: #000;
+}
+
+.season-number {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: #cc0000;
+    transition: color 0.3s;
+}
+
+.season-episodes {
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* ===== EPISODES GRID ===== */
+.episodes-section {
+    margin-top: 40px;
+}
+
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+}
+
+.episode-card {
+    background: #0a0a0a;
+    border: 2px solid #cc0000;
+    border-radius: 12px;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 10px;
+}
+
+.episode-card:hover {
+    background: #1a0000;
+    border-color: #ff0000;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(204, 0, 0, 0.5);
+}
+
+.episode-card.active {
+    background: #cc0000;
+    border-color: #ff3333;
+}
+
+.episode-number-big {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: #cc0000;
+    font-weight: 700;
+}
+
+.episode-card:hover .episode-number-big,
+.episode-card.active .episode-number-big {
+    color: #fff;
+}
+
+.episode-title-small {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.episode-card:hover .episode-title-small,
+.episode-card.active .episode-title-small {
+    color: #fff;
+}
+
+/* ===== PLAYER ===== */
+.player-wrapper {
+    margin: 30px 0;
+}
+
+.player-container {
+    aspect-ratio: 16/9;
+    background: #000;
+    border: 3px solid #cc0000;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.player-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0a0a0a;
+}
+
+.placeholder-text {
+    color: #cc0000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.player-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ===== EPISODE HEADER ===== */
+.episode-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.current-episode-title {
+    font-size: 1.5rem;
+    color: #cc0000;
+    margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 2px solid #cc0000;
+    color: #666;
+}
+
+/* ===== UTILIDADES ===== */
+.loading {
+    text-align: center;
+    color: #cc0000;
+    padding: 40px;
+    font-size: 1.2rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .seasons-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .season-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .episodes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* ===== INDICADOR DE DISPONIBILIDAD ===== */
+.episode-card {
+    position: relative;
+}
+
+.episode-card[data-has-video="false"] {
+    opacity: 0.6;
+}
