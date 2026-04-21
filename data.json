@@ -1,0 +1,20 @@
+{
+  "animes": [
+    {
+      "id": "release-that-witch",
+      "title": "Release That Witch",
+      "poster": "https://i.ibb.co/FL5GzB6w/os-AKISm-H7-GAr-QEAv-AELx-Dr-TAFEf-A5-Ff-VQceo-UI-tplv-photomode-zoomcover-720-720.jpg",
+      "fallbackPoster": "https://via.placeholder.com/400x600/cc0000/ffffff?text=RTW",
+      "episodes": [
+        { "id": 1, "number": 1, "title": "El Despertar", "videoUrl": "" },
+        { "id": 2, "number": 2, "title": "La Primera Bruja", "videoUrl": "" },
+        { "id": 3, "number": 3, "title": "Secretos de la Magia", "videoUrl": "" },
+        { "id": 4, "number": 4, "title": "Nuevas Alianzas", "videoUrl": "" },
+        { "id": 5, "number": 5, "title": "La Amenaza Crece", "videoUrl": "https://vimeo.com/1179243324" },
+        { "id": 6, "number": 6, "title": "Armas del Futuro", "videoUrl": "" },
+        { "id": 7, "number": 7, "title": "La Batalla Final", "videoUrl": "" },
+        { "id": 8, "number": 8, "title": "Un Nuevo Amanecer", "videoUrl": "https://drive.google.com/file/d/1_yZ9a3GwgkQmjf_Qymo2YiPMiGbJtsXj/view?usp=drivesdk" }
+      ]
+    }
+  ]
+}
